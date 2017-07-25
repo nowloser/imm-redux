@@ -1,0 +1,207 @@
+$chat_width: 320px;
+$base_color: rgb(57, 172, 230);
+body {
+  font_family: serif;
+  font_size: 14px;
+}
+
+.chat_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.person_box {
+  position: relative;
+  width: $chat_width;
+  background: $base_color;
+  height: 100%;
+}
+
+.person_header {
+  color: #fff;
+  padding: 16px;
+}
+
+.message_box {
+  background_color: #eee;
+  position: absolute;
+  left: $chat_width;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+.mess_choose {
+  display: inline_block;
+  margin: 0 48px;
+  color: #666;
+  i {
+    font_size: 96px;
+    display: block;
+
+  }
+  span {
+    font_size: 16px;
+    display: block;
+  }
+  &.active{
+    color: #39ace6;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.chat_container {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  text_align: center;
+  transition: all 450ms cubic_bezier(0.23, 1, 0.32, 1) 0ms;
+  &.active {
+    top: 5%;
+  }
+}
+
+.label_container {
+
+}
+
+.person_container {
+  padding: 12px;
+  margin: 0 6px 7px 6px;
+  color: #fff;
+  border_radius: 4px;
+  background: rgba(0, 0, 0, .1);
+}
+
+.person_name {
+  margin_bottom: 12px;
+}
+
+.all_person {
+  position: absolute;
+  width: 100%;
+  top: 44px;
+  bottom: 0;
+  overflow: auto;
+}
+
+.person_sel {
+  display: inline_block;
+  vertical_align: top;
+  input {
+    font_size: 16px;
+    margin: 0;
+  }
+}
+
+.person_detail {
+  display: inline_block;
+  vertical_align: top;
+  margin_left: 12px;
+}
+
+.person_label {
+  position: absolute;
+  left: 48px;
+  right: 48px;
+  text_align: center;
+  display: inline_block;
+}
+
+.all_sel {
+  display: inline_block;
+  vertical_align: top;
+  input {
+    font_size: 16px;
+    margin_left: 2px;
+  }
+}
+
+.mess_container{
+  //max_height: 0;
+  overflow: auto;
+  text_align: left;
+  padding: 16px;
+  margin: 12px;
+  border_radius: 4px;
+  display: none;
+  margin_top: 36px;
+  transition: all 450ms cubic_bezier(0.23, 1, 0.32, 1) 0ms;
+  &.active{
+    display: block;
+    //max_height: 10000px;
+    border: 10px solid #39ace6;
+
+  }
+}
+
+.now_choose{
+  font_size: 48px;
+  margin_top: _60px;
+  position: absolute;
+  left: 50%;
+  color: #39ace6;
+
+}
+
+.now_choose_caixin{
+  margin_left: 72px;
+}
+
+.now_choose_duanxin{
+  margin_left: _120px;
+}
+
+.person_list_box{
+  color: #555;
+  padding: 16px;
+}
+
+.mess_content{
+  width: 100%;
+  border: none;
+  height: 200px;
+  padding: 12px;
+  border_radius: 4px;
+  margin_top: 12px;
+}
+
+.btn_seed{
+  display: inline_block;
+  font_weight: normal;
+  line_height: 1.25;
+  text_align: center;
+  white_space: nowrap;
+  vertical_align: middle;
+  cursor: pointer;
+  _webkit_user_select: none;
+  _moz_user_select: none;
+  _ms_user_select: none;
+  user_select: none;
+  border: 1px solid $base_color;
+  padding: 6px 12px;
+  border_radius: 4px;
+  color: #fff;
+  background_color: $base_color;
+}
+
+.selected_person{
+  background: #777;
+  border_radius: 2px;
+  padding: 2px 4px;
+  margin_left: 12px;
+  color: #fff;
+}
+.selected_person_label{
+  padding: 2px 4px;
+}
+
+.photo_container{
+  padding: 16px;
+}

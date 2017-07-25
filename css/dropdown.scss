@@ -1,0 +1,30 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  /* background: #fff; */
+  border-radius: 4px;
+  min-width: 160px;
+  /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16), 0 3px 10px rgba(0, 0, 0, 0.23); */
+  display: none;
+  margin-top: 0.1rem;
+  &.active{
+    display: block;
+  }
+
+}
+
+
+.dropdown-top{
+  background-size: contain!important;
+  width: 16px;
+  height: 16px;
+  margin-bottom: -5px;
+  margin-left: .5rem;
+}
